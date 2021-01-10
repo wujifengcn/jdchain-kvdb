@@ -1,6 +1,6 @@
 package com.jd.blockchain.kvdb.client;
 
-import com.jd.blockchain.binaryproto.BinaryProtocol;
+import com.jd.binaryproto.BinaryProtocol;
 import com.jd.blockchain.kvdb.client.partition.Partitioner;
 import com.jd.blockchain.kvdb.client.partition.SimpleMurmur3HashPartitioner;
 import com.jd.blockchain.kvdb.protocol.client.NettyClient;
@@ -9,12 +9,14 @@ import com.jd.blockchain.kvdb.protocol.proto.wal.Entity;
 import com.jd.blockchain.kvdb.protocol.proto.wal.KV;
 import com.jd.blockchain.kvdb.protocol.proto.wal.KVItem;
 import com.jd.blockchain.kvdb.protocol.proto.wal.WalEntity;
-import com.jd.blockchain.utils.Bytes;
 import com.jd.blockchain.wal.FileLogger;
 import com.jd.blockchain.wal.Wal;
 import com.jd.blockchain.wal.WalConfig;
 import com.jd.blockchain.wal.WalDataCoder;
 import com.jd.blockchain.wal.WalIterator;
+
+import utils.Bytes;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

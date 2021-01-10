@@ -1,6 +1,6 @@
 package com.jd.blockchain.kvdb.server;
 
-import com.jd.blockchain.binaryproto.BinaryProtocol;
+import com.jd.binaryproto.BinaryProtocol;
 import com.jd.blockchain.kvdb.protocol.Constants;
 import com.jd.blockchain.kvdb.protocol.client.ClientConfig;
 import com.jd.blockchain.kvdb.protocol.client.NettyClient;
@@ -10,8 +10,10 @@ import com.jd.blockchain.kvdb.protocol.proto.Response;
 import com.jd.blockchain.kvdb.protocol.proto.impl.KVDBMessage;
 import com.jd.blockchain.kvdb.server.config.KVDBConfig;
 import com.jd.blockchain.kvdb.server.config.ServerConfig;
-import com.jd.blockchain.utils.Bytes;
-import com.jd.blockchain.utils.io.FileUtils;
+
+import utils.Bytes;
+import utils.io.FileUtils;
+
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;

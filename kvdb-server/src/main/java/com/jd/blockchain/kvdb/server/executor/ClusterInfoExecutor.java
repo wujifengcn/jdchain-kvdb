@@ -1,11 +1,13 @@
 package com.jd.blockchain.kvdb.server.executor;
 
-import com.jd.blockchain.binaryproto.BinaryProtocol;
+import com.jd.binaryproto.BinaryProtocol;
 import com.jd.blockchain.kvdb.protocol.proto.ClusterInfo;
 import com.jd.blockchain.kvdb.protocol.proto.Message;
 import com.jd.blockchain.kvdb.protocol.proto.impl.KVDBMessage;
 import com.jd.blockchain.kvdb.server.Request;
-import com.jd.blockchain.utils.Bytes;
+
+import utils.Bytes;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
